@@ -1,0 +1,75 @@
+.header {
+  padding: 5px 20px;
+
+  @include desktop {
+    padding: 11px 60px;
+  }
+}
+
+.logo-mob {
+  @include desktop {
+    display: none;
+  }
+}
+
+.logo {
+  @include mobile {
+    display: none;
+  }
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger-menu {
+  @include desktop {
+    display: none;
+  }
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: none;
+  fill: $fill-brgr-mn;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:active {
+    fill: $fill-active-brgr-mn;
+  }
+}
+
+.nav {
+  @include mobile {
+    display: none;
+  }
+  @include desktop {
+    display: block;
+  }
+}
+
+.nav-list {
+  @include mobile {
+    display: none;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.nav-item {
+  @include mobile {
+    display: none;
+  }
+
+  @include desktop {
+    font-size: 25px;
+    margin-left: 32px;
+    padding: 30px 5px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
