@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="fon">
+    <!-- HEADER -->
     <header class="header">
       <div class="header-box">
         <img src="./images/logo/logo-mob.svg" alt="Logo" class="logo-mob" />
@@ -33,7 +34,38 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <h1 class="hero-title">Меблі-трансформери</h1>
+        <p class="hero-text">
+          Меблевий магазин українського виробника пропонує елегантні та
+          високоякісні меблі, виготовлені з використанням традиційних
+          українських мотивів та натуральних матеріалів.
+        </p>
+      </section>
+
+      <!-- SHOP -->
+      <section class="shop" id="shop">
+        <h2 class="title-shop">Магазин</h2>
+        <h3 class="subtitle-shop">Столи</h3>
+
+        <article class="card-short">
+          <img
+            srcset="
+              ./images/card/mob/IMG_8510.JPG 230w,
+              ./images/card/mob/IMG_8510.JPG 460w
+            "
+            sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
+            src="./images/card/mob/IMG_8510.JPG"
+            alt="Родос"
+          />
+          <h4 class="title-card">Стіл</h4>
+          <p class="text-card">“Родос”</p>
+          <span class="price-card">9 800 ₴</span>
+        </article>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

@@ -1,5 +1,7 @@
 .header {
+  position: relative;
   padding: 5px 20px;
+  background: $bg-header;
 
   @include desktop {
     padding: 11px 60px;
@@ -10,6 +12,8 @@
   @include desktop {
     display: none;
   }
+  width: 50px;
+  height: 40px;
 }
 
 .logo {

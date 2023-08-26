@@ -1,0 +1,15 @@
+.shop {
+  padding: 28px 15px;
+}
+
+.title-shop {
+  @include font(25px, 400, 1.4);
+  color: $title-shop;
+  padding-left: 96px;
+}
+
+.subtitle-shop {
+  @include font(20px, 400, 1.5);
+  color: $text-primary;
+  padding: 20px 0 20px 106px;
+}

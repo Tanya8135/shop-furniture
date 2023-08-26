@@ -9,18 +9,19 @@ html {
 
 body {
   color: $text-primary;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
-  background-color: $bg-body;
+  // font-size: 16px;
+  // font-weight: 400;
+  // line-height: 1.5;
+  font-family: "Lora", serif;
+  background: $bg-body;
 }
 
 img {
   // min-width: 100%;
 
   display: block;
-  max-width: 100%;
+  // max-width: 100%;
+  width: 100%;
   height: auto;
   object-fit: cover; /* определяет как содержимое заменяемого элемента <img> 
                         или <video>, должно заполнять контейнер относительно его 

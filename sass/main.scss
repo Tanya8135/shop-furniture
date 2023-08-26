@@ -9,8 +9,10 @@
 @import "./base/reset";
 
 // Components
-@import "./components/body.scss";
 @import "./components/header/header";
+@import "./components/hero/hero";
+@import "./components/shop/shop";
+@import "./components/shop/card-short";
 
 // Layout
 @import "./layout/container";

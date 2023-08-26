@@ -1,0 +1,37 @@
+.hero {
+  background-image: linear-gradient($bg-hero, $bg-hero),
+    url(../images/bg-fon/hero-fon_420.png);
+//   position: relative;
+//   top: -60px;
+//   z-index: -1;
+margin-top: -60px;
+
+  @include retina {
+    background-image: linear-gradient($bg-hero, $bg-hero),
+      url(../images/bg-fon/hero-fon_420@2.png);
+  }
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0;
+}
+
+.hero-title {
+  @include font(35px, 400, 1.1em);
+
+  font-family: "Alice", serif;
+  letter-spacing: 0.08em;
+  text-align: center;
+  padding: 115px 0 22px 0;
+  color: $hero-text;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-text {
+  @include font(14px, 400, 1.5);
+  padding: 0 15px 30px 15px;
+  color: $hero-text;
+  letter-spacing: 0.07em;
+}
