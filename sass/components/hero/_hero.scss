@@ -19,7 +19,7 @@ margin-top: -60px;
 }
 
 .hero-title {
-  @include font(35px, 400, 1.1em);
+  @include font(35px, 400);
 
   font-family: "Alice", serif;
   letter-spacing: 0.08em;
@@ -30,7 +30,7 @@ margin-top: -60px;
 }
 
 .hero-text {
-  @include font(14px, 400, 1.5);
+  @include font(14px, 400);
   padding: 0 15px 30px 15px;
   color: $hero-text;
   letter-spacing: 0.07em;

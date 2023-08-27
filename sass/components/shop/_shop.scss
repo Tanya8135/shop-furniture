@@ -3,13 +3,13 @@
 }
 
 .title-shop {
-  @include font(25px, 400, 1.4);
+  @include font(25px, 400);
   color: $title-shop;
   padding-left: 96px;
 }
 
 .subtitle-shop {
-  @include font(20px, 400, 1.5);
+  @include font(20px, 400);
   color: $text-primary;
-  padding: 20px 0 20px 106px;
+  padding: 16px 0 16px 106px;
 }

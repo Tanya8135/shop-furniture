@@ -24,16 +24,21 @@
   }
 }
 
-@mixin font($fs, $fw, $lh) {
+// @mixin font($fs, $fw, $lh) {
+//   font-size: $fs;
+//   font-weight: $fw;
+//   line-height: $lh;
+// }
+
+@mixin font($fs, $fw) {
   font-size: $fs;
   font-weight: $fw;
-  line-height: $lh;
 }
 
-@mixin short-font($fs, $lh) {
-  font-size: $fs;
-  line-height: $lh;
-}
+// @mixin short-font($fs, $lh) {
+//   font-size: $fs;
+//   line-height: $lh;
+// }
 
 @mixin visually-hidden {
   position: absolute;

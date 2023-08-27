@@ -50,20 +50,34 @@
         <h2 class="title-shop">Магазин</h2>
         <h3 class="subtitle-shop">Столи</h3>
 
-        <article class="card-short">
-          <img
-            srcset="
-              ./images/card/mob/IMG_8510.JPG 230w,
-              ./images/card/mob/IMG_8510.JPG 460w
-            "
-            sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
-            src="./images/card/mob/IMG_8510.JPG"
-            alt="Родос"
-          />
-          <h4 class="title-card">Стіл</h4>
-          <p class="text-card">“Родос”</p>
-          <span class="price-card">9 800 ₴</span>
-        </article>
+        <div class="card-slider">
+          <button class="btn-arrow btn-arrow_position-l">
+            <svg width="30" height="30" class="shadow-arrow">
+              <use href="./images/sprite.svg#icon-arrow-l"></use>
+            </svg>
+          </button>
+
+          <article class="card-short">
+            <img
+              srcset="
+                ./images/card/mob/IMG_8510.JPG 230w,
+                ./images/card/mob/IMG_8510.JPG 460w
+              "
+              sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
+              src="./images/card/mob/IMG_8510.JPG"
+              alt="Родос"
+            />
+            <h4 class="title-card">Стіл</h4>
+            <p class="text-card">“Родос”</p>
+            <p class="price-card">9 800 ₴</p>
+          </article>
+
+          <button class="btn-arrow btn-arrow_position-r">
+            <svg width="30" height="30" class="shadow-arrow">
+              <use href="./images/sprite.svg#icon-arrow-r"></use>
+            </svg>
+          </button>
+        </div>
       </section>
     </main>
     <footer></footer>
