@@ -122,6 +122,11 @@ ul {
     display: none;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 419px) {
+  .logo {
+    display: none;
+  }
+}
 
 .header-box {
   display: -webkit-box;
@@ -151,6 +156,11 @@ ul {
 }
 
 @media screen and (min-width: 420px) and (max-width: 1439px) {
+  .nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 419px) {
   .nav {
     display: none;
   }
@@ -232,6 +242,7 @@ ul {
 
 .shop-container {
   margin: 0 auto;
+  max-width: 320px;
 }
 
 .title-shop {
@@ -240,6 +251,12 @@ ul {
   color: #545350;
   padding-left: 96px;
 }
+@media screen and (min-width: 320px) and (max-width: 419px) {
+  .title-shop {
+    padding: 0;
+    text-align: center;
+  }
+}
 
 .subtitle-shop {
   font-size: 20px;
@@ -247,10 +264,16 @@ ul {
   color: #2c2b29;
   padding: 16px 0 16px 106px;
 }
+@media screen and (min-width: 320px) and (max-width: 419px) {
+  .subtitle-shop {
+    text-align: center;
+    padding-left: 0;
+  }
+}
 
 .card {
   background-color: #fff;
-  max-width: 230px;
+  min-width: 190px;
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -289,11 +312,6 @@ ul {
   padding: 0;
 }
 
-.test {
-  width: 230px;
-  height: 156px;
-}
-
 .btn-arrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,20 +331,22 @@ ul {
   fill: #f6973f;
 }
 .btn-arrow_position-l {
-  margin-top: 122px;
+  margin-top: 90px;
   padding: 25px;
 }
-.btn-arrow_position-l--long {
-  margin-top: 122px;
-  padding: 25px;
+@media screen and (min-width: 320px) and (max-width: 419px) {
+  .btn-arrow_position-l {
+    padding: 10px;
+  }
 }
 .btn-arrow_position-r {
-  margin-top: 122px;
+  margin-top: 90px;
   padding: 25px;
 }
-.btn-arrow_position-r--long {
-  margin-top: 122px;
-  padding: 25px;
+@media screen and (min-width: 320px) and (max-width: 419px) {
+  .btn-arrow_position-r {
+    padding: 10px;
+  }
 }
 
 .square {

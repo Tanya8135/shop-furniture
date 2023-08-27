@@ -1,6 +1,6 @@
 .card {
   background-color: #fff;
-  max-width: 230px;
+  min-width: 190px;
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,11 +32,6 @@
   padding: 0;
 }
 
-.test {
-  width: 230px;
-  height: 156px;
-}
-
 .btn-arrow {
   display: flex;
   justify-content: center;
@@ -52,24 +47,28 @@
   }
 
   &_position-l {
-    margin-top: 122px;
+    @include min-mobile {
+      padding: 10px;
+    }
+    margin-top: 90px;
     padding: 25px;
   }
 
-  &_position-l--long {
-    margin-top: 122px;
-    padding: 25px;
-  }
+  // &_position-l--long {
+  //   margin-top: 90px;
+  // }
 
   &_position-r {
-    margin-top: 122px;
+    @include min-mobile {
+      padding: 10px;
+    }
+    margin-top: 90px;
     padding: 25px;
   }
 
-  &_position-r--long {
-    margin-top: 122px;
-    padding: 25px;
-  }
+  // &_position-r--long {
+  //   margin-top: 90px;
+  // }
 }
 
 .square {

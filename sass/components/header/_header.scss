@@ -21,6 +21,10 @@
     display: none;
   }
 
+  @include min-mobile {
+    display: none;
+  }
+
   width: 100px;
   height: 90px;
 }
@@ -34,6 +38,7 @@
   @include desktop {
     display: none;
   }
+
   background-color: transparent;
   border: none;
   outline: none;
@@ -50,6 +55,11 @@
   @include mobile {
     display: none;
   }
+
+  @include min-mobile {
+    display: none;
+  }
+
   @include desktop {
     display: block;
   }
