@@ -460,4 +460,9 @@ ul {
 }
 .nom-link:active {
   color: #f6973f;
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .nom-link:hover {
+    color: #f6973f;
+  }
 }/*# sourceMappingURL=main.css.map */

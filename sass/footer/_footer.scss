@@ -87,4 +87,10 @@
   &:active {
     color: $accent-color;
   }
+
+  &:hover {
+    @include desktop {
+      color: $accent-color;
+    }
+  }
 }
