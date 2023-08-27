@@ -17,8 +17,13 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header-box">
-        <img src="./images/logo/logo-mob.svg" alt="Logo" class="logo-mob" />
-        <img src="./images/logo/logo.svg" alt="Logo" class="logo" />
+        <a href="./index.html">
+          <img src="./images/logo/logo-mob.svg" alt="Logo" class="logo-mob" />
+        </a>
+        <a href="./index.html">
+          <img src="./images/logo/logo.svg" alt="Logo" class="logo" />
+        </a>
+
         <button class="burger-menu">
           <svg width="40" height="40">
             <use href="./images/sprite.svg#icon-burger-menu"></use>
@@ -47,107 +52,116 @@
 
       <!-- SHOP -->
       <section class="shop" id="shop">
-        <h2 class="title-shop">Магазин</h2>
+        <div class="shop-container">
+          <h2 class="title-shop">Магазин</h2>
 
-        <!-- Table -->
-        <h3 class="subtitle-shop">Столи</h3>
-        <div class="card-slider">
-          <button class="btn-arrow btn-arrow_position-l">
-            <svg width="30" height="30" class="shadow-arrow">
-              <use href="./images/sprite.svg#icon-arrow-l"></use>
-            </svg>
-          </button>
+          <!-- Table -->
+          <h3 class="subtitle-shop" id="table">Столи</h3>
+          <div class="card-slider">
+            <button class="btn-arrow btn-arrow_position-l">
+              <svg width="30" height="30" class="shadow-arrow">
+                <use href="./images/sprite.svg#icon-arrow-l"></use>
+              </svg>
+            </button>
 
-          <article class="card-short">
-            <img
-              srcset="
-                ./images/card/mob/rodos_230.png   230w,
-                ./images/card/mob/rodos_230@2.png 460w
-              "
-              sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
-              src="./images/card/mob/rodos_230.png"
-              alt="Родос"
-            />
-            <h4 class="title-card">Стіл</h4>
-            <p class="text-card">“Родос”</p>
-            <p class="price-card">9 800 ₴</p>
-          </article>
+            <article class="card">
+              <img
+                srcset="
+                  ./images/card/mob/rodos_230.png   230w,
+                  ./images/card/mob/rodos_230@2.png 460w
+                "
+                sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
+                src="./images/card/mob/rodos_230.png"
+                alt="Родос"
+              />
+              <h4 class="title-card">Стіл</h4>
+              <p class="text-card">“Родос”</p>
+              <p class="price-card">9 800 ₴</p>
+            </article>
 
-          <button class="btn-arrow btn-arrow_position-r">
-            <svg width="30" height="30" class="shadow-arrow">
-              <use href="./images/sprite.svg#icon-arrow-r"></use>
-            </svg>
-          </button>
-        </div>
+            <button class="btn-arrow btn-arrow_position-r">
+              <svg width="30" height="30" class="shadow-arrow">
+                <use href="./images/sprite.svg#icon-arrow-r"></use>
+              </svg>
+            </button>
+          </div>
 
-        <!-- Pouf -->
-        <h3 class="subtitle-shop">Пуфи</h3>
-        <div class="card-slider">
-          <button class="btn-arrow btn-arrow_position-l--long">
-            <svg width="30" height="30" class="shadow-arrow">
-              <use href="./images/sprite.svg#icon-arrow-l"></use>
-            </svg>
-          </button>
+          <!-- Pouf -->
+          <h3 class="subtitle-shop" id="pouf">Пуфи</h3>
+          <div class="card-slider">
+            <button class="btn-arrow btn-arrow_position-l--long">
+              <svg width="30" height="30" class="shadow-arrow">
+                <use href="./images/sprite.svg#icon-arrow-l"></use>
+              </svg>
+            </button>
 
-          <article class="card-short">
-            <img
-              srcset="
-                ./images/card/mob/pouf_230.png   230w,
-                ./images/card/mob/pouf_230@2.png 460w
-              "
-              sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
-              src="./images/card/mob/pouf_230.png"
-              alt="Родос"
-            />
-            <h4 class="title-card">Пуф</h4>
-            <p class="text-card">Transformer</p>
-            <div class="square"></div>
-            <p class="price-card">4 500 ₴</p>
-          </article>
+            <article class="card">
+         
+                <img
+                  srcset="
+                    ./images/card/mob/pouf_230.png   230w,
+                    ./images/card/mob/pouf_230@2.png 460w
+                  "
+                  sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
+                  src="./images/card/mob/pouf_230.png"
+                  alt="Родос"
+                  class="test"
+                />
+             
+              <h4 class="title-card">Пуф</h4>
+              <p class="text-card">Transformer</p>
+              <div class="square"></div>
+              <p class="price-card">4 500 ₴</p>
+            </article>
 
-          <button class="btn-arrow btn-arrow_position-r--long">
-            <svg width="30" height="30" class="shadow-arrow">
-              <use href="./images/sprite.svg#icon-arrow-r"></use>
-            </svg>
-          </button>
-        </div>
+            <button class="btn-arrow btn-arrow_position-r--long">
+              <svg width="30" height="30" class="shadow-arrow">
+                <use href="./images/sprite.svg#icon-arrow-r"></use>
+              </svg>
+            </button>
+          </div>
 
-        <!-- Sofa -->
-        <h3 class="subtitle-shop">М’які меблі</h3>
-        <div class="card-slider">
-          <button class="btn-arrow btn-arrow_position-l">
-            <svg width="30" height="30" class="shadow-arrow">
-              <use href="./images/sprite.svg#icon-arrow-l"></use>
-            </svg>
-          </button>
+          <!-- Sofa -->
+          <h3 class="subtitle-shop" id="sofa">М’які меблі</h3>
+          <div class="card-slider">
+            <button class="btn-arrow btn-arrow_position-l">
+              <svg width="30" height="30" class="shadow-arrow">
+                <use href="./images/sprite.svg#icon-arrow-l"></use>
+              </svg>
+            </button>
 
-          <article class="card-short">
-            <img
-              srcset="
-                ./images/card/mob/sofa_230.png   230w,
-                ./images/card/mob/sofa_230@2.png 460w
-              "
-              sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
-              src="./images/card/mob/sofa_230.png"
-              alt="Родос"
-            />
-            <h4 class="title-card">Стіл</h4>
-            <p class="text-card">“Родос”</p>
-            <p class="price-card">9 800 ₴</p>
-          </article>
+            <article class="card">
+              <img
+                srcset="
+                  ./images/card/mob/sofa_230.png   230w,
+                  ./images/card/mob/sofa_230@2.png 460w
+                "
+                sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
+                src="./images/card/mob/sofa_230.png"
+                alt="Родос"
+              />
+              <h4 class="title-card">Стіл</h4>
+              <p class="text-card">“Родос”</p>
+              <p class="price-card">9 800 ₴</p>
+            </article>
 
-          <button class="btn-arrow btn-arrow_position-r">
-            <svg width="30" height="30" class="shadow-arrow">
-              <use href="./images/sprite.svg#icon-arrow-r"></use>
-            </svg>
-          </button>
+            <button class="btn-arrow btn-arrow_position-r">
+              <svg width="30" height="30" class="shadow-arrow">
+                <use href="./images/sprite.svg#icon-arrow-r"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer-container">
-        <img src="./images/logo/logo-mob.svg" alt="Logo" class="logo-mob" />
-        <img src="./images/logo/logo.svg" alt="Logo" class="logo" />
+        <a href="./index.html">
+          <img src="./images/logo/logo-mob.svg" alt="Logo" class="logo-mob" />
+        </a>
+        <a href="./index.html">
+          <img src="./images/logo/logo.svg" alt="Logo" class="logo" />
+        </a>
 
         <div class="contact-box">
           <b>Контакти</b>
@@ -190,7 +204,12 @@
 
         <!-- Перечень -->
         <div class="nomination">
-
+          <ul class="nom-list">
+            <li class="nom-item"><a href="#shop">Магазин</a></li>
+            <li class="nom-item"><a href="#pouf">Пуфи</a></li>
+            <li class="nom-item"><a href="#table">Столи</a></li>
+            <li class="nom-item"><a href="#sofa">М’які меблі</a></li>
+          </ul>
         </div>
       </div>
     </footer>

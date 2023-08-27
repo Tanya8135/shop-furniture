@@ -113,6 +113,10 @@ ul {
   }
 }
 
+.logo {
+  width: 100px;
+  height: 90px;
+}
 @media screen and (min-width: 420px) and (max-width: 1439px) {
   .logo {
     display: none;
@@ -226,6 +230,10 @@ ul {
   padding: 28px 15px;
 }
 
+.shop-container {
+  margin: 0 auto;
+}
+
 .title-shop {
   font-size: 25px;
   font-weight: 400;
@@ -240,14 +248,13 @@ ul {
   padding: 16px 0 16px 106px;
 }
 
-.card-short {
+.card {
   background-color: #fff;
   max-width: 230px;
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  margin: 0 auto;
 }
 
 .title-card {
@@ -278,6 +285,13 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.test {
+  width: 230px;
+  height: 156px;
 }
 
 .btn-arrow {
@@ -300,17 +314,19 @@ ul {
 }
 .btn-arrow_position-l {
   margin-top: 122px;
-  padding: 12px;
+  padding: 25px;
 }
 .btn-arrow_position-l--long {
-  margin-top: 260px;
+  margin-top: 122px;
+  padding: 25px;
 }
 .btn-arrow_position-r {
   margin-top: 122px;
-  padding: 12px;
+  padding: 25px;
 }
 .btn-arrow_position-r--long {
-  margin-top: 260px;
+  margin-top: 122px;
+  padding: 25px;
 }
 
 .square {

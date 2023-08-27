@@ -1,12 +1,10 @@
-.card-short {
+.card {
   background-color: #fff;
   max-width: 230px;
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-
-  margin: 0 auto;
 }
 
 .title-card {
@@ -30,6 +28,13 @@
 .card-slider {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.test {
+  width: 230px;
+  height: 156px;
 }
 
 .btn-arrow {
@@ -48,20 +53,22 @@
 
   &_position-l {
     margin-top: 122px;
-    padding: 12px;
+    padding: 25px;
   }
 
   &_position-l--long {
-    margin-top: 260px;
+    margin-top: 122px;
+    padding: 25px;
   }
 
   &_position-r {
     margin-top: 122px;
-    padding: 12px;
+    padding: 25px;
   }
 
   &_position-r--long {
-    margin-top: 260px;
+    margin-top: 122px;
+    padding: 25px;
   }
 }
 
