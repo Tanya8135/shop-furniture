@@ -233,7 +233,8 @@ ul {
   font-weight: 400;
   padding: 0 15px 30px 15px;
   color: #f2f2f2;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
 }
 
 .shop {
@@ -361,5 +362,102 @@ ul {
 }
 
 .footer-container {
+  margin: 0 auto;
+  max-width: 320px;
+}
+@media screen and (min-width: 420px) and (max-width: 1439px) {
+  .footer-container {
+    max-width: 420px;
+  }
+}
+
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 15px 15px 10px 15px;
+}
+
+.logo-mob-f {
+  padding-left: 45px;
+}
+
+.subtitle-box {
+  padding: 28px 0 16px 35px;
+}
+
+.subtitle-contact-f {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2c2b29;
+  letter-spacing: 0.07em;
+}
+
+.contact-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 32px;
+}
+
+.contact-link {
+  margin-left: 4px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-item {
+  margin: 0 0 32px 28px;
+}
+.social-item:first-child {
+  margin-left: 0;
+}
+
+.social-link {
+  fill: #403730;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link:active {
+  fill: #f6973f;
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .social-link:hover {
+    fill: #f6973f;
+  }
+}
+
+.nom-item {
+  margin-bottom: 16px;
+}
+.nom-item:last-child {
+  margin-bottom: 16px;
+}
+
+.nom-link {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #403730;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nom-link:active {
+  color: #f6973f;
 }/*# sourceMappingURL=main.css.map */

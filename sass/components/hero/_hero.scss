@@ -1,10 +1,10 @@
 .hero {
   background-image: linear-gradient($bg-hero, $bg-hero),
     url(../images/bg-fon/hero-fon_420.png);
-//   position: relative;
-//   top: -60px;
-//   z-index: -1;
-margin-top: -60px;
+  //   position: relative;
+  //   top: -60px;
+  //   z-index: -1;
+  margin-top: -60px;
 
   @include retina {
     background-image: linear-gradient($bg-hero, $bg-hero),
@@ -33,5 +33,6 @@ margin-top: -60px;
   @include font(14px, 400);
   padding: 0 15px 30px 15px;
   color: $hero-text;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
 }
