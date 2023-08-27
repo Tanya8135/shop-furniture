@@ -302,7 +302,28 @@ ul {
   margin-top: 122px;
   padding: 12px;
 }
+.btn-arrow_position-l--long {
+  margin-top: 260px;
+}
 .btn-arrow_position-r {
   margin-top: 122px;
   padding: 12px;
+}
+.btn-arrow_position-r--long {
+  margin-top: 260px;
+}
+
+.square {
+  background-color: #5d295c;
+  width: 20px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.footer {
+  background-color: #c9c1ad;
+}
+
+.footer-container {
+  padding: 15px 15px 10px 15px;
 }/*# sourceMappingURL=main.css.map */

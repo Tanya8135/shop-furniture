@@ -51,8 +51,23 @@
     padding: 12px;
   }
 
+  &_position-l--long {
+    margin-top: 260px;
+  }
+
   &_position-r {
     margin-top: 122px;
     padding: 12px;
   }
+
+  &_position-r--long {
+    margin-top: 260px;
+  }
+}
+
+.square {
+  background-color: $color-violet;
+  width: 20px;
+  padding: 10px;
+  margin-left: 20px;
 }

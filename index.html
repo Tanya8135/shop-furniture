@@ -48,8 +48,9 @@
       <!-- SHOP -->
       <section class="shop" id="shop">
         <h2 class="title-shop">Магазин</h2>
-        <h3 class="subtitle-shop">Столи</h3>
 
+        <!-- Table -->
+        <h3 class="subtitle-shop">Столи</h3>
         <div class="card-slider">
           <button class="btn-arrow btn-arrow_position-l">
             <svg width="30" height="30" class="shadow-arrow">
@@ -60,8 +61,8 @@
           <article class="card-short">
             <img
               srcset="
-              ./images/card/mob/rodos_230.png 230w,
-              ./images/card/mob/rodos_230@2.png 460w
+                ./images/card/mob/rodos_230.png   230w,
+                ./images/card/mob/rodos_230@2.png 460w
               "
               sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
               src="./images/card/mob/rodos_230.png"
@@ -78,8 +79,120 @@
             </svg>
           </button>
         </div>
+
+        <!-- Pouf -->
+        <h3 class="subtitle-shop">Пуфи</h3>
+        <div class="card-slider">
+          <button class="btn-arrow btn-arrow_position-l--long">
+            <svg width="30" height="30" class="shadow-arrow">
+              <use href="./images/sprite.svg#icon-arrow-l"></use>
+            </svg>
+          </button>
+
+          <article class="card-short">
+            <img
+              srcset="
+                ./images/card/mob/pouf_230.png   230w,
+                ./images/card/mob/pouf_230@2.png 460w
+              "
+              sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
+              src="./images/card/mob/pouf_230.png"
+              alt="Родос"
+            />
+            <h4 class="title-card">Пуф</h4>
+            <p class="text-card">Transformer</p>
+            <div class="square"></div>
+            <p class="price-card">4 500 ₴</p>
+          </article>
+
+          <button class="btn-arrow btn-arrow_position-r--long">
+            <svg width="30" height="30" class="shadow-arrow">
+              <use href="./images/sprite.svg#icon-arrow-r"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Sofa -->
+        <h3 class="subtitle-shop">М’які меблі</h3>
+        <div class="card-slider">
+          <button class="btn-arrow btn-arrow_position-l">
+            <svg width="30" height="30" class="shadow-arrow">
+              <use href="./images/sprite.svg#icon-arrow-l"></use>
+            </svg>
+          </button>
+
+          <article class="card-short">
+            <img
+              srcset="
+                ./images/card/mob/sofa_230.png   230w,
+                ./images/card/mob/sofa_230@2.png 460w
+              "
+              sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 420px) 230px, 100vw"
+              src="./images/card/mob/sofa_230.png"
+              alt="Родос"
+            />
+            <h4 class="title-card">Стіл</h4>
+            <p class="text-card">“Родос”</p>
+            <p class="price-card">9 800 ₴</p>
+          </article>
+
+          <button class="btn-arrow btn-arrow_position-r">
+            <svg width="30" height="30" class="shadow-arrow">
+              <use href="./images/sprite.svg#icon-arrow-r"></use>
+            </svg>
+          </button>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <img src="./images/logo/logo-mob.svg" alt="Logo" class="logo-mob" />
+        <img src="./images/logo/logo.svg" alt="Logo" class="logo" />
+
+        <div class="contact-box">
+          <b>Контакти</b>
+          <div class="contact-number">
+            <svg width="20" height="20" class="shadow-arrow">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+            <a class="contact-link" href="tel:+380979503493">097-950-34-93</a>
+          </div>
+
+          <div class="social-box">
+            <!-- 
+    добавить ссылки на соц сети
+   -->
+            <ul class="social-list">
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg width="20" height="20" class="shadow-arrow">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg width="20" height="20" class="shadow-arrow">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg width="20" height="20" class="shadow-arrow">
+                    <use href="./images/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Перечень -->
+        <div class="nomination">
+
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
