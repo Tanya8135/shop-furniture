@@ -1,6 +1,10 @@
 .card {
   @include desktop {
     min-width: 380px;
+    margin-left: 56px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
   background-color: #fff;
@@ -9,11 +13,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  margin-left: 56px;
-
-  &:last-child {
-    margin-left: 0;
-  }
 
   &_card-pouf {
     @include desktop {
@@ -53,26 +52,34 @@
 
 .pouf-list {
   display: flex;
+  margin: 0;
 }
 
 .pouf-item {
-  margin-left: 32px;
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  @include mobile {
+  @include min-mobile {
     display: none;
 
     &:first-child {
       display: block;
     }
   }
+
+  margin-left: 32px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
+// SLIDER
 .slider {
+  @include desktop {
+    overflow: hidden;
+  }
+  
+  display: flex;
   overflow: hidden;
+  margin: 0;
 }
 
 .title-card {

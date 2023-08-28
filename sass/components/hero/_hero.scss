@@ -1,6 +1,20 @@
 .hero {
   @include min-mobile {
     background-image: linear-gradient($bg-hero, $bg-hero),
+      url(../../../images/bg-fon/bg-fon_320.png);
+    //   position: relative;
+    //   top: -60px;
+    //   z-index: -1;
+    margin-top: -60px;
+
+    @include retina {
+      background-image: linear-gradient($bg-hero, $bg-hero),
+        url(../images/bg-fon/bg-fon_320.png);
+    }
+  }
+
+  @include mobile {
+    background-image: linear-gradient($bg-hero, $bg-hero),
       url(../images/bg-fon/hero-fon_420.png);
     //   position: relative;
     //   top: -60px;
