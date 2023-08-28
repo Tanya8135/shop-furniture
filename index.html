@@ -17,12 +17,14 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header-box">
-        <a href="./index.html">
-          <img src="./images/logo/logo-mob.svg" alt="Logo" class="logo-mob" />
-        </a>
-        <a href="./index.html">
-          <img src="./images/logo/logo.svg" alt="Logo" class="logo" />
-        </a>
+        <div>
+          <a href="./index.html">
+            <img src="./images/logo/logo-mob.svg" alt="Logo" class="logo-mob" />
+          </a>
+          <a href="./index.html">
+            <img src="./images/logo/logo.svg" alt="Logo" class="logo" />
+          </a>
+        </div>
 
         <button class="burger-menu">
           <svg width="40" height="40">
@@ -42,12 +44,15 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <h1 class="hero-title">Меблі-трансформери</h1>
-        <p class="hero-text">
-          Меблевий магазин українського виробника пропонує елегантні та
-          високоякісні меблі, виготовлені з використанням традиційних
-          українських мотивів та натуральних матеріалів.
-        </p>
+        <div class="hero-box">
+          <h1 class="hero-title">Меблі-трансформери</h1>
+          <p class="hero-text">
+            Меблевий магазин українського виробника пропонує елегантні та
+            високоякісні меблі, виготовлені з використанням традиційних
+            українських мотивів та натуральних матеріалів.
+          </p>
+        </div>
+        <div class="bg-fon"></div>
       </section>
 
       <!-- SHOP -->
@@ -64,20 +69,45 @@
               </svg>
             </button>
 
-            <article class="card">
-              <img
-                srcset="
-                  ./images/card/mob/rodos_230.png   230w,
-                  ./images/card/mob/rodos_230@2.png 460w
-                "
-                sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 320px) 190px, 100vw"
-                src="./images/card/mob/rodos_230.png"
-                alt="Родос"
-              />
-              <h4 class="title-card">Стіл</h4>
-              <p class="text-card">“Родос”</p>
-              <p class="price-card">9 800 ₴</p>
-            </article>
+            <ul class="table-list">
+              <li class="table-item">
+                <article class="card">
+                  <img
+                    srcset="
+                      ./images/card/mob/rodos_230.png       230w,
+                      ./images/card/mob/rodos_230@2.png     460w,
+                      ./images/card/desktop/rodos_380.png   380w,
+                      ./images/card/desktop/rodos_380@2.png 760w
+                    "
+                    sizes="(min-width: 1440px) 380px, (min-width: 768px) 590px, (min-width: 320px) 190px, 100vw"
+                    src="./images/card/mob/rodos_230.png"
+                    alt="Родос"
+                  />
+                  <h4 class="title-card">Стіл</h4>
+                  <p class="text-card">“Родос”</p>
+                  <p class="price-card">9 800 ₴</p>
+                </article>
+              </li>
+
+              <li class="table-item">
+                <article class="card">
+                  <img
+                    srcset="
+                      ./images/card/mob/mykolajv_230.png       230w,
+                      ./images/card/mob/mykolajv_230@2.png     460w,
+                      ./images/card/desktop/mykolajv_380.png   380w,
+                      ./images/card/desktop/mykolajv_380@2.png 760w
+                    "
+                    sizes="(min-width: 1440px) 380px, (min-width: 768px) 590px, (min-width: 320px) 190px, 100vw"
+                    src="./images/card/desktop/mykolajv_380.png"
+                    alt="Родос"
+                  />
+                  <h4 class="title-card">Стіл</h4>
+                  <p class="text-card">“Родос”</p>
+                  <p class="price-card">9 800 ₴</p>
+                </article>
+              </li>
+            </ul>
 
             <button class="btn-arrow btn-arrow_position-r">
               <svg width="30" height="30" class="shadow-arrow">
@@ -95,20 +125,62 @@
               </svg>
             </button>
 
-            <article class="card">
-              <img
-                srcset="
-                  ./images/card/mob/rodos_230.png   230w,
-                  ./images/card/mob/rodos_230@2.png 460w
-                "
-                sizes="(min-width: 1440px) 700px, (min-width: 768px) 590px, (min-width: 320px) 190px, 100vw"
-                src="./images/card/mob/rodos_230.png"
-                alt="Родос"
-              />
-              <h4 class="title-card">Стіл</h4>
-              <p class="text-card">“Родос”</p>
-              <p class="price-card">9 800 ₴</p>
-            </article>
+            <ul class="pouf-list">
+              <li class="pouf-item">
+                <article class="card card_card-pouf">
+                  <img
+                    srcset="
+                      ./images/card/mob/pf/pouf_230.png              230w,
+                      ./images/card/mob/pf/pouf_230@2.png            460w,
+                      ./images/card/desktop/pf/pouf-violet_270.png   270w,
+                      ./images/card/desktop/pf/pouf-violet_270@2.png 540w
+                    "
+                    sizes="(min-width: 1440px) 270px, (min-width: 768px) 590px, (min-width: 320px) 190px, 100vw"
+                    src="./images/card/mob/pf/pouf_230.png"
+                    alt="Родос"
+                  />
+                  <h4 class="title-card">Стіл</h4>
+                  <p class="text-card">“Родос”</p>
+                  <p class="price-card">9 800 ₴</p>
+                </article>
+              </li>
+              <li class="pouf-item">
+                <article class="card card_card-pouf">
+                  <img
+                    srcset="
+                      ./images/card/mob/pf/pouf_230.png              230w,
+                      ./images/card/mob/pf/pouf_230@2.png            460w,
+                      ./images/card/desktop/pf/pouf-violet_270.png   270w,
+                      ./images/card/desktop/pf/pouf-violet_270@2.png 540w
+                    "
+                    sizes="(min-width: 1440px) 270px, (min-width: 768px) 590px, (min-width: 320px) 190px, 100vw"
+                    src="./images/card/mob/pf/pouf_230.png"
+                    alt="Родос"
+                  />
+                  <h4 class="title-card">Стіл</h4>
+                  <p class="text-card">“Родос”</p>
+                  <p class="price-card">9 800 ₴</p>
+                </article>
+              </li>
+              <li class="pouf-item">
+                <article class="card card_card-pouf">
+                  <img
+                    srcset="
+                      ./images/card/mob/pf/pouf_230.png              230w,
+                      ./images/card/mob/pf/pouf_230@2.png            460w,
+                      ./images/card/desktop/pf/pouf-violet_270.png   270w,
+                      ./images/card/desktop/pf/pouf-violet_270@2.png 540w
+                    "
+                    sizes="(min-width: 1440px) 270px, (min-width: 768px) 590px, (min-width: 320px) 190px, 100vw"
+                    src="./images/card/mob/pf/pouf_230.png"
+                    alt="Родос"
+                  />
+                  <h4 class="title-card">Стіл</h4>
+                  <p class="text-card">“Родос”</p>
+                  <p class="price-card">9 800 ₴</p>
+                </article>
+              </li>
+            </ul>
 
             <button class="btn-arrow btn-arrow_position-r">
               <svg width="30" height="30" class="shadow-arrow">
@@ -151,74 +223,84 @@
       </section>
     </main>
     <footer class="footer">
-<div class="footer-container">
-      <div class="footer-box">
-        <div>
-          <div class="logo-mob-f">
+      <div class="footer-container">
+        <div class="footer-box">
+          <div>
+            <div class="logo-mob-f">
+              <a href="./index.html">
+                <img
+                  src="./images/logo/logo-mob.svg"
+                  alt="Logo"
+                  class="logo-mob"
+                />
+              </a>
+            </div>
             <a href="./index.html">
-              <img
-                src="./images/logo/logo-mob.svg"
-                alt="Logo"
-                class="logo-mob"
-              />
+              <img src="./images/logo/logo.svg" alt="Logo" class="logo" />
             </a>
-          </div>
-          <a href="./index.html">
-            <img src="./images/logo/logo.svg" alt="Logo" class="logo" />
-          </a>
 
-          <div class="contact-box">
-            <div class="subtitle-box">
-              <b class="subtitle-contact-f">Контакти</b>
-            </div>
-            <div class="contact-number">
-              <svg width="20" height="20" class="shadow-arrow">
-                <use href="./images/sprite.svg#icon-phone"></use>
-              </svg>
-              <a class="contact-link" href="tel:+380979503493">097-950-34-93</a>
-            </div>
+            <div class="contact-box">
+              <div class="subtitle-box">
+                <b class="subtitle-contact-f">Контакти</b>
+              </div>
+              <div class="contact-number">
+                <svg width="20" height="20" class="shadow-arrow">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                <a class="contact-link" href="tel:+380979503493"
+                  >097-950-34-93</a
+                >
+              </div>
 
-            <div class="social-box">
-              <!-- 
+              <div class="social-box">
+                <!-- 
     добавить ссылки на соц сети
    -->
-              <ul class="social-list">
-                <li class="social-item">
-                  <a class="social-link" href="">
-                    <svg width="20" height="20" class="shadow-arrow">
-                      <use href="./images/sprite.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a class="social-link" href="">
-                    <svg width="20" height="20" class="shadow-arrow">
-                      <use href="./images/sprite.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a class="social-link" href="">
-                    <svg width="20" height="20" class="shadow-arrow">
-                      <use href="./images/sprite.svg#icon-telegram"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a class="social-link" href="">
+                      <svg width="20" height="20" class="shadow-arrow">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="">
+                      <svg width="20" height="20" class="shadow-arrow">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link" href="">
+                      <svg width="20" height="20" class="shadow-arrow">
+                        <use href="./images/sprite.svg#icon-telegram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Перечень -->
-        <div class="nomination">
-          <ul class="nom-list">
-            <li class="nom-item"><a class="nom-link" href="#shop">Магазин</a></li>
-            <li class="nom-item"><a class="nom-link" href="#pouf">Пуфи</a></li>
-            <li class="nom-item"><a class="nom-link" href="#table">Столи</a></li>
-            <li class="nom-item"><a class="nom-link" href="#sofa">М’які меблі</a></li>
-          </ul>
+          <!-- Перечень -->
+          <div class="nomination">
+            <ul class="nom-list">
+              <li class="nom-item">
+                <a class="nom-link" href="#shop">Магазин</a>
+              </li>
+              <li class="nom-item">
+                <a class="nom-link" href="#pouf">Пуфи</a>
+              </li>
+              <li class="nom-item">
+                <a class="nom-link" href="#table">Столи</a>
+              </li>
+              <li class="nom-item">
+                <a class="nom-link" href="#sofa">М’які меблі</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-</div>
     </footer>
   </body>
 </html>

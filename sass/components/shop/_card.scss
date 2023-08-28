@@ -1,13 +1,81 @@
 .card {
+  @include desktop {
+    min-width: 380px;
+  }
+
   background-color: #fff;
   min-width: 190px;
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  margin-left: 56px;
+
+  &:last-child {
+    margin-left: 0;
+  }
+
+  &_card-pouf {
+    @include desktop {
+      min-width: 270px;
+    }
+  }
+}
+
+.table-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-item {
+  @include desktop {
+    display: block;
+    margin-left: 76px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  @include min-mobile {
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @include mobile {
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.pouf-list {
+  display: flex;
+}
+
+.pouf-item {
+  margin-left: 32px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @include mobile {
+    display: none;
+
+    &:first-child {
+      display: block;
+    }
+  }
 }
 
 .title-card {
+  @include desktop {
+    // font-size: 30px;
+    // letter-spacing: 0.03em;
+  }
   @include font(16px, 400);
   padding: 10px 0 8px 20px;
   color: $text-primary;

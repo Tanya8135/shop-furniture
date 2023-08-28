@@ -1,14 +1,54 @@
 .hero {
-  background-image: linear-gradient($bg-hero, $bg-hero),
-    url(../images/bg-fon/hero-fon_420.png);
-  //   position: relative;
-  //   top: -60px;
-  //   z-index: -1;
-  margin-top: -60px;
-
-  @include retina {
+  @include min-mobile {
     background-image: linear-gradient($bg-hero, $bg-hero),
-      url(../images/bg-fon/hero-fon_420@2.png);
+      url(../images/bg-fon/hero-fon_420.png);
+    //   position: relative;
+    //   top: -60px;
+    //   z-index: -1;
+    margin-top: -60px;
+
+    @include retina {
+      background-image: linear-gradient($bg-hero, $bg-hero),
+        url(../images/bg-fon/hero-fon_420@2.png);
+    }
+  }
+
+  // @include desktop {
+  //   background-image: linear-gradient($bg-hero, $bg-hero),
+  //     url(../images/bg-fon/bg-fon_1440.png);
+
+  //   @include retina {
+  //     background-image: linear-gradient($bg-hero, $bg-hero),
+  //       url(../images/bg-fon/bg-fon_1440@2.png);
+  //   }
+  //   max-width: 720px;
+  //   min-height: 414px;
+  //   margin: -120px 0 0 0;
+  // }
+
+  // @include desktop {
+  //   display: none;
+  // }
+
+  display: flex;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0;
+}
+
+.bg-fon {
+  @include desktop {
+    background-image: url(../images/bg-fon/bg-fon_1440.png);
+
+    @include retina {
+      background-image: url(../images/bg-fon/bg-fon_1440@2.png);
+    }
+    min-width: 720px;
+    min-height: 414px;
+    margin: -120px 0 0 0;
   }
 
   background-repeat: no-repeat;
@@ -18,7 +58,19 @@
   padding-top: 0;
 }
 
+.hero-box {
+  @include desktop {
+    padding: 0 64px;
+  }
+}
+
 .hero-title {
+  @include desktop {
+    @include font(50px, 400);
+    color: $hero-text-dsk;
+    padding: 32px 0;
+  }
+
   @include font(35px, 400);
 
   font-family: "Alice", serif;
@@ -30,6 +82,12 @@
 }
 
 .hero-text {
+  @include desktop {
+    @include font(25px, 400);
+    line-height: 1.5;
+    letter-spacing: 0.07em;
+    color: $text-primary;
+  }
   @include font(14px, 400);
   padding: 0 15px 30px 15px;
   color: $hero-text;
