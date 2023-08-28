@@ -417,17 +417,36 @@ ul {
   }
 }
 
+.slider {
+  overflow: hidden;
+}
+
 .title-card {
   font-size: 16px;
   font-weight: 400;
   padding: 10px 0 8px 20px;
   color: #2c2b29;
 }
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .title-card {
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    padding: 18px 0 12px 24px;
+  }
+}
+
 .text-card {
   font-size: 14px;
   font-weight: 400;
   color: #403730;
   padding: 0 0 8px 20px;
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .text-card {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    padding: 0 0 18px 24px;
+  }
 }
 
 .price-card {
@@ -435,6 +454,12 @@ ul {
   font-weight: 400;
   color: #606060;
   padding: 8px 0 16px 20px;
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .price-card {
+    font-size: 25px;
+    padding: 0 0 28px 24px;
+  }
 }
 
 .card-slider {
