@@ -1,4 +1,7 @@
 .shop {
+  @include desktop {
+    padding: 32px 181px;
+  }
   padding: 28px 15px;
 }
 

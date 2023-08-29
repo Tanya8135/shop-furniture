@@ -55,8 +55,17 @@
   margin: 0;
 }
 
+// может измениться подход, когда буду использовать библиотеку
 .pouf-item {
   @include min-mobile {
+    display: none;
+
+    &:first-child {
+      display: block;
+    }
+  }
+  // может измениться
+  @include mobile {
     display: none;
 
     &:first-child {
@@ -71,20 +80,29 @@
   }
 }
 
-// SLIDER
-.slider {
-  @include desktop {
-    overflow: hidden;
+.img-height {
+  @include min-mobile {
+    height: 170px;
   }
-  
+
+  @include mobile {
+    height: 170px;
+  }
+}
+
+// SLIDER
+/* на desktop что-то типа карусели будет или просто смена карточек;
+на min-mobile, mobile будет типа слайда;
+для tablet сделать уменьшеную версию как для desktop */
+.slider {
   display: flex;
-  overflow: hidden;
+  // overflow: hidden;
   margin: 0;
 }
 
 .title-card {
   @include desktop {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.03em;
     padding: 18px 0 12px 24px;
   }
@@ -95,7 +113,7 @@
 
 .text-card {
   @include desktop {
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0.03em;
     padding: 0 0 18px 24px;
   }
@@ -106,7 +124,7 @@
 
 .price-card {
   @include desktop {
-    font-size: 25px;
+    font-size: 27px;
     padding: 0 0 28px 24px;
   }
 
@@ -136,17 +154,23 @@
     fill: $fill-active;
   }
 
+  &:hover {
+    @include desktop {
+      fill: $fill-active;
+    }
+  }
+
   &_position-l {
     @include min-mobile {
       padding: 10px;
     }
     margin-top: 90px;
     padding: 25px;
-  }
 
-  // &_position-l--long {
-  //   margin-top: 90px;
-  // }
+    @include desktop {
+      margin-top: 210px;
+    }
+  }
 
   &_position-r {
     @include min-mobile {
@@ -154,11 +178,23 @@
     }
     margin-top: 90px;
     padding: 25px;
-  }
 
-  // &_position-r--long {
-  //   margin-top: 90px;
-  // }
+    @include desktop {
+      margin-top: 210px;
+    }
+  }
+}
+
+.bg-arrow {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .square {

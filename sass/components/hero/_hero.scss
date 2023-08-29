@@ -1,24 +1,21 @@
 .hero {
   @include min-mobile {
     background-image: linear-gradient($bg-hero, $bg-hero),
-      url(../../../images/bg-fon/bg-fon_320.png);
-    //   position: relative;
-    //   top: -60px;
-    //   z-index: -1;
-    margin-top: -60px;
+      url(../images/bg-fon/bg-fon_320.png);
 
     @include retina {
       background-image: linear-gradient($bg-hero, $bg-hero),
         url(../images/bg-fon/bg-fon_320.png);
     }
+
+    margin-top: -60px;
+    min-width: 320px;
+    max-height: 270px;
   }
 
   @include mobile {
     background-image: linear-gradient($bg-hero, $bg-hero),
       url(../images/bg-fon/hero-fon_420.png);
-    //   position: relative;
-    //   top: -60px;
-    //   z-index: -1;
     margin-top: -60px;
 
     @include retina {
@@ -26,23 +23,6 @@
         url(../images/bg-fon/hero-fon_420@2.png);
     }
   }
-
-  // @include desktop {
-  //   background-image: linear-gradient($bg-hero, $bg-hero),
-  //     url(../images/bg-fon/bg-fon_1440.png);
-
-  //   @include retina {
-  //     background-image: linear-gradient($bg-hero, $bg-hero),
-  //       url(../images/bg-fon/bg-fon_1440@2.png);
-  //   }
-  //   max-width: 720px;
-  //   min-height: 414px;
-  //   margin: -120px 0 0 0;
-  // }
-
-  // @include desktop {
-  //   display: none;
-  // }
 
   display: flex;
 
@@ -79,6 +59,11 @@
 }
 
 .hero-title {
+  @include min-mobile {
+font-size: 28px;
+padding: 80px 0 22px 0;
+  }
+
   @include desktop {
     @include font(50px, 400);
     color: $hero-text-dsk;
