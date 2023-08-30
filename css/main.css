@@ -314,8 +314,7 @@ ul {
 }
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .shop {
-    padding: 74px 0 96px 181px;
-    padding: 0;
+    padding: 74px 0 96px 0px;
   }
 }
 
@@ -329,6 +328,16 @@ ul {
   }
 }
 
+.shop-container-pouf {
+  margin: 0 auto;
+  max-width: 320px;
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .shop-container-pouf {
+    min-width: 874px;
+  }
+}
+
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .subsection {
     padding: 64px 0 0 0;
@@ -339,9 +348,7 @@ ul {
   .subsection-pouf {
     margin: 0 auto;
     margin-top: 60px;
-    padding-top: 8px;
-    padding-bottom: 32px;
-    max-width: 1078px;
+    padding: 8px 0 32px 0;
   }
 }
 
@@ -389,9 +396,6 @@ ul {
     font-size: 30px;
     letter-spacing: 0.03em;
     padding: 0px 0 32px 40px;
-  }
-  .subtitle-shop__pouf {
-    padding-left: 140px;
   }
 }
 

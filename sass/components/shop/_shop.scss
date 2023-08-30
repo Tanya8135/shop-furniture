@@ -1,7 +1,7 @@
 .shop {
   @include desktop {
-    padding: 74px 0 96px 181px;
-    padding: 0;
+    padding: 74px 0 96px 0px;
+    // padding: 0;
   }
   padding: 28px 15px;
 }
@@ -9,6 +9,14 @@
 .shop-container {
   @include desktop {
     min-width: 836px;
+  }
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.shop-container-pouf {
+  @include desktop {
+    min-width: 874px;
   }
   margin: 0 auto;
   max-width: 320px;
@@ -24,9 +32,7 @@
   @include desktop {
     margin: 0 auto;
     margin-top: 60px;
-    padding-top: 8px;
-    padding-bottom: 32px;
-    max-width: 1078px;
+    padding: 8px 0 32px 0;
   }
 }
 
@@ -64,9 +70,10 @@
     letter-spacing: 0.03em;
     padding: 0px 0 32px 40px;
 
-    &__pouf {
-      padding-left: 140px;
-    }
+    // &__pouf {
+    //   // padding-left: 140px;
+    //   padding: 0;
+    // }
   }
 
   @include font(20px, 400);
