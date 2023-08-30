@@ -1,6 +1,7 @@
 .shop {
   @include desktop {
-    padding: 32px 181px;
+    padding: 74px 0 96px 181px;
+    padding: 0;
   }
   padding: 28px 15px;
 }
@@ -11,6 +12,30 @@
   }
   margin: 0 auto;
   max-width: 320px;
+}
+
+.subsection {
+  @include desktop {
+    padding: 64px 0 0 0;
+  }
+}
+
+.subsection-pouf {
+  @include desktop {
+    margin: 0 auto;
+    margin-top: 60px;
+    padding-top: 8px;
+    padding-bottom: 32px;
+    max-width: 1078px;
+  }
+}
+
+.pouf {
+  @include desktop {
+    padding-top: -32px;
+    background-color: $bg-section;
+    margin: 0 auto;
+  }
 }
 
 .title-shop {
@@ -37,8 +62,11 @@
   @include desktop {
     font-size: 30px;
     letter-spacing: 0.03em;
-    padding: 32px 0 32px 40px;
-    // padding-left: 0;
+    padding: 0px 0 32px 40px;
+
+    &__pouf {
+      padding-left: 140px;
+    }
   }
 
   @include font(20px, 400);

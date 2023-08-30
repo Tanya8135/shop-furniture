@@ -185,6 +185,10 @@
   }
 }
 
+.arrow-mob {
+  display: none;
+}
+
 .bg-arrow {
   @include desktop {
     display: flex;
