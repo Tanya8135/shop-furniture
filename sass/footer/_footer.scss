@@ -35,7 +35,7 @@
 .contact-number {
   display: flex;
   align-items: center;
-  padding-bottom: 32px;
+  padding-bottom: 16px;
 }
 
 .contact-link {
@@ -48,7 +48,7 @@
 }
 
 .social-item {
-  margin: 0 0 32px 28px;
+  margin: 0 0 16px 28px;
 
   &:first-child {
     margin-left: 0;
@@ -68,6 +68,10 @@
       fill: $fill-active;
     }
   }
+}
+
+.contact-email {
+padding-bottom: 16px;
 }
 
 .nom-item {

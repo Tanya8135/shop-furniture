@@ -687,7 +687,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 32px;
+  padding-bottom: 16px;
 }
 
 .contact-link {
@@ -704,7 +704,7 @@ ul {
 }
 
 .social-item {
-  margin: 0 0 32px 28px;
+  margin: 0 0 16px 28px;
 }
 .social-item:first-child {
   margin-left: 0;
@@ -722,6 +722,10 @@ ul {
   .social-link:hover {
     fill: #f6973f;
   }
+}
+
+.contact-email {
+  padding-bottom: 16px;
 }
 
 .nom-item {
