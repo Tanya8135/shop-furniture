@@ -186,7 +186,19 @@
 }
 
 .arrow-mob {
-  display: none;
+  @include desktop {
+    display: none;
+  }
+}
+
+.bg-arrow {
+  @include min-mobile {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .bg-arrow {
